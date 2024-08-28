@@ -1,0 +1,47 @@
+/* Structure */
+body {
+    background:#79582f;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#content {
+    background:#7a695e;
+    padding:5px;
+    margin:20px auto;
+    width:70%;
+    border-radius:10px;
+}
+
+/* Navigation */
+#main-nav ul {
+    padding-left:0; /* removes the left padding (indent) */
+    width:fit-content; /* center on page */
+    margin: auto; /* center on page */
+}
+
+#main-nav li {
+    list-style-type:none; /* no bullets */
+    display:inline-block; /* appear on one line */
+}
+
+#main-nav a {
+    text-decoration:none; /* no underline */
+    background:#fbb4b4;
+    color:white;
+    padding:5px;
+    margin:5px;
+    border-radius:2px;
+}
+
+#main-nav a:hover {
+    background:black;
+    color:#fbb4b4;
+}
+
+/* Typography */
+h1 {
+    color:#bdb4af;
+}
+p {
+    color:#fbe7cf;
+}
