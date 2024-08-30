@@ -14,7 +14,7 @@ body {
 }
 
 #table {
-    background:#498c60;
+    background:#cdd9c7;
     padding:5px;
     margin:20px auto;
     width:70%;
@@ -23,7 +23,7 @@ body {
 
 #main-table a {
     text-decoration:none; /* no underline */
-    color:#1e2e33;
+    color:#c0d3c8;
     padding:5px;
     margin:5px;
     border-radius:2px;
@@ -36,13 +36,13 @@ body {
 
 /* Typography */
 h1 { /* for main title */
-    color:#244028;
+    color:#162a1d;
     width:fit-content; /* center on page */
     margin: auto; /* center on page */
 }
 
 table { /*for the list*/
-    color:#bec4c6;
+    color:#1e2e33;
     width:fit-content; /* center on page */
     margin: auto; /* center on page */
 }
