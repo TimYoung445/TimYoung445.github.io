@@ -1,89 +1,58 @@
 /* Structure */
 body {
-    background:#1b5181;
+    background:#1d3826;
     background-size:100vw,100vh;
     font-family:Arial, Helvetica, sans-serif;
 }
 
-#content {
-    background:#c4ddf2;
+#main-content {
+    background:#677479;
     padding:5px;
     margin:20px auto;
     width:70%;
     border-radius:10px;
-}
-
-#first-image {
-    width:fit-content;
-    margin:auto;
-}
-
-#second-image {
-    width:fit-content;
-    margin:auto;
 }
 
 #table {
-    background:#c4ddf2;
+    background:#498c60;
     padding:5px;
     margin:20px auto;
     width:70%;
     border-radius:10px;
 }
 
-/* Navigation */
-#main-nav ul {
-    padding-left:0; /* removes the left padding (indent) */
-    width:fit-content; /* center on page */
-    margin: auto; /* center on page */
-}
-
-#main-nav li {
-    list-style-type:none; /* no bullets */
-    display:inline-block; /* appear on one line */
-}
-
-#main-nav a {
+#main-table a {
     text-decoration:none; /* no underline */
-    background:#789ebf;
-    color:#e6f0f6;
+    color:#1e2e33;
     padding:5px;
     margin:5px;
     border-radius:2px;
 }
 
-#main-nav a:hover {
-    background:#e6f0f6;
-    color:#789ebf;
-}
+/* Navigation */
+
+
+
 
 /* Typography */
 h1 { /* for main title */
-    color:#023e73;
-    width:fit-content; /* center on page */
-    margin: auto; /* center on page */
-}
-
-p { /* for the paragraph */
-    color:#272c30;
-}
-
-h2 { /*for the list*/
-    color:black;
+    color:#244028;
     width:fit-content; /* center on page */
     margin: auto; /* center on page */
 }
 
 table { /*for the list*/
-    color:black;
+    color:#bec4c6;
     width:fit-content; /* center on page */
     margin: auto; /* center on page */
 }
+
 table td {
     color:black;
     width:fit-content;
     margin:auto;
 }
+
 
 /* Media Queries */
 /* Apply to 600px screens and larger */
@@ -91,6 +60,10 @@ table td {
     .columns {
         display:flex;
     }
+    .one {
+        flex:1;
+    }
+
 }
 
 /* Apply to 760px screens and larger */
