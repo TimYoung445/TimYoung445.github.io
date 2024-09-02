@@ -5,7 +5,7 @@ body {
     font-family:Arial, Helvetica, sans-serif;
 }
 
-#main-content {
+#main-title {
     background:#677479;
     padding:5px;
     margin:20px auto;
@@ -21,12 +21,26 @@ body {
     border-radius:10px;
 }
 
-#main-table a {
+#assignments-list a {
     text-decoration:none; /* no underline */
-    color:#c0d3c8;
+    color:black;
     padding:5px;
     margin:5px;
     border-radius:2px;
+}
+
+#assignments section {
+    background:lightgray;
+    padding:5px;
+    margin:20px auto;
+    width:70%;
+    border-radius: 10px;
+
+}
+
+img {
+    width:fit-content;
+    margin:auto;
 }
 
 /* Navigation */
@@ -41,13 +55,19 @@ h1 { /* for main title */
     margin: auto; /* center on page */
 }
 
-table { /*for the list*/
+h2 {
+    color: black;
+    width:fit-content; /* center on page */
+    margin:auto; /* center of page */
+}
+
+section h3 {
     color:#1e2e33;
     width:fit-content; /* center on page */
     margin: auto; /* center on page */
 }
 
-table td {
+section p {
     color:black;
     width:fit-content;
     margin:auto;
@@ -62,6 +82,15 @@ table td {
     }
     .one {
         flex:1;
+    }
+    .two {
+        flex:2;
+    }
+    .three {
+        flex:3;
+    }
+    .four {
+        flex:4;
     }
 
 }
