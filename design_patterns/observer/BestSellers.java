@@ -18,7 +18,7 @@ public class BestSellers implements Subject {
     @Overrride
     public void notifyObserver() {
         for(Observer observer : observers) {
-            observer.update(title, authorFirstName, authorLastName, description, genre);
+            observer.update(title, genre, authorFirstName, authorLastName, description);
         }
     }
 
@@ -27,10 +27,12 @@ public class BestSellers implements Subject {
         observers.remove(observer);
     }
 
-    public void addBook(String title, Genre genre, String authorFirstName, String authorLastName, String Description) {
+    public void addBook(String title, Genre genre, String authorFirstName, String authorLastName, String description) {
         // add a book based on info
         // notify observer
-        
+        Book book = new book(title, genre, authorFirstName, authorLastName, description);
+        bestSellers.add(book);
+        notifyObserver(book);
     }
 
 }
