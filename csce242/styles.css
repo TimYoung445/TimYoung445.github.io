@@ -1,46 +1,86 @@
 /* Structure */
+
 body {
-    background:#1d3826;
-    background-size:100vw,100vh;
+    background-color:#1d3826;
+    color:black;
     font-family:Arial, Helvetica, sans-serif;
 }
 
-#main-title {
-    background:#677479;
+#header-content {
+    /*header content*/
+    margin:auto;
+    width:80%;
     padding:5px;
-    margin:20px auto;
-    width:70%;
-    border-radius:10px;
 }
 
-#table {
-    background:#cdd9c7;
+#assignment-id {
+    margin:auto;
+    width:80%;
     padding:5px;
-    margin:20px auto;
-    width:70%;
-    border-radius:10px;
 }
 
-#assignments-list a {
-    text-decoration:none; /* no underline */
-    color:black;
-    padding:5px;
+
+#flex-container {
+    display:inline;
+    text-align:center;
+    justify-content:space-between;
+}
+
+#header-id {
+    text-align:center;
+}
+
+#assignment-id {
+    text-align:center;
+    text-decoration:underline;
+    cursor:pointer;
+}
+
+#project-header {
+    text-align:center;
+    text-decoration:underline;
+    cursor:pointer;
+}
+
+#assignment {
+    background:#1d3826;
+    text-align:center;
     margin:5px;
-    border-radius:2px;
+    border:15px solid black;
+    width:30%;
+    flex:30%;
 }
 
-#assignments section {
+/*#assignment {
     background:lightgray;
     padding:5px;
     margin:20px auto;
     width:70%;
     border-radius: 10px;
 
+}*/
+
+#img-id {
+    width:200px;
+    height:120px;
 }
 
-img {
-    width:fit-content;
+a {
+    color:black;
+    text-decoration: underline;
+}
+
+#project-list li {
+    text-align:center;
+    list-style-type:none;
+    padding:20px;
     margin:auto;
+}
+
+#project-list a {
+    text-decoration:none;
+    border: 5px solid black ;
+    padding:10px;
 }
 
 /* Navigation */
@@ -48,54 +88,45 @@ img {
 
 
 
-/* Typography */
-h1 { /* for main title */
+/* Typography*/
+/*h1 { /* for main title 
     color:#162a1d;
-    width:fit-content; /* center on page */
-    margin: auto; /* center on page */
-}
+    width:fit-content; /* center on page 
+    margin: auto; /* center on page 
+}*/
 
-h2 {
+/*h2 {
     color: black;
-    width:fit-content; /* center on page */
-    margin:auto; /* center of page */
-}
+    width:fit-content; /* center on page 
+    margin:auto; /* center of page 
+}*/
 
-section h3 {
+/*section h3 {
     color:#1e2e33;
-    width:fit-content; /* center on page */
-    margin: auto; /* center on page */
-}
+    width:fit-content; /* center on page 
+    margin: auto; /* center on page 
+}*/
 
-section p {
+/*section p {
     color:black;
     width:fit-content;
     margin:auto;
-}
+} */
 
 
 /* Media Queries */
 /* Apply to 600px screens and larger */
 @media only screen and (min-width:600px) {
-    .columns {
+    #flex-container {
         display:flex;
-    }
-    .one {
-        flex:1;
-    }
-    .two {
-        flex:2;
-    }
-    .three {
-        flex:3;
-    }
-    .four {
-        flex:4;
+        flex-wrap:wrap;
+        flex:20%;
+        flex-grow:0%;
     }
 
 }
 
-/* Apply to 760px screens and larger */
+/* Apply to 760px screens and larger 
 @media only screen and (min-width:760px) { 
 
-}
+}*/
