@@ -1,9 +1,14 @@
 /* Structure */
 
+:root {
+  --background: #1d3826; 
+  --text: darkgray; 
+}
+
 body {
-    background-color:#1d3826;
-    color:black;
-    font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--background);
+  color: var(--text);
 }
 
 #header-content {
@@ -13,10 +18,10 @@ body {
     padding:5px;
 }
 
-#assignment-id {
-    margin:auto;
-    width:80%;
-    padding:5px;
+#header-content, #assignment-id {
+  margin: auto;  
+  width: 80%; 
+  padding: 5px; 
 }
 
 
@@ -30,35 +35,23 @@ body {
     text-align:center;
 }
 
-#assignment-id {
-    text-align:center;
-    text-decoration:underline;
-    cursor:pointer;
-}
-
-#project-header {
-    text-align:center;
-    text-decoration:underline;
-    cursor:pointer;
+#assignment-id, 
+#project-header{
+  /*Assignments block*/ 
+  text-align: center; 
+  text-decoration: underline;
+  cursor: pointer; 
 }
 
 #assignment {
-    background:#1d3826;
-    text-align:center;
-    margin:5px;
-    border:15px solid black;
-    width:30%;
-    flex:30%;
-}
-
-/*#assignment {
-    background:lightgray;
-    padding:5px;
-    margin:20px auto;
-    width:70%;
-    border-radius: 10px;
-
-}*/
+    /* individual assignment*/
+    background: var(--background);
+    text-align: center; 
+    margin: 5px; 
+    border: 15px solid var(--text); 
+    width:30%; 
+    flex: 30%;
+  }
 
 #img-id {
     width:200px;
@@ -66,7 +59,7 @@ body {
 }
 
 a {
-    color:black;
+    color:darkgray;
     text-decoration: underline;
 }
 
@@ -79,7 +72,7 @@ a {
 
 #project-list a {
     text-decoration:none;
-    border: 5px solid black ;
+    border: 5px solid var(--text);
     padding:10px;
 }
 

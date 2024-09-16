@@ -16,7 +16,7 @@ public class Character {
     }
 
     @Override
-    public String toString() {
+    public String toString() { //this wil output the character
         StringBuilder sb = new StringBuilder();
         sb.append(name).append("\n");
         for(String line : line) {

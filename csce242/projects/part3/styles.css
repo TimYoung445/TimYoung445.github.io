@@ -1,0 +1,110 @@
+:root {
+    --background-color: #fff;
+    --text-color: #000;
+    --header-background: #eee;
+    --footer-background: #ddd;
+    --link-color: #007bff;
+    --link-hover-color: #0056b3;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--header-background);
+    padding: 10px;
+    text-align: center;
+}
+
+#main-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#main-nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+#main-nav a {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+#main-nav a:hover {
+    color: var(--link-hover-color);
+}
+
+main {
+    padding: 20px;
+    display:inline;
+    text-align:center;
+    justify-content: space-between;
+}
+
+#main-footer {
+    background-color: var(--footer-background);
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Main Page Images */
+#flex-container {
+    display:inline;
+    text-align:center;
+    justify-content:space-between;
+}
+
+#artist-list {
+    text-align:center;
+    display:inline;
+    justify-content:space-between;
+}
+
+section {
+    text-align:center;
+    margin:auto;
+    width:80%;
+    padding:5px;
+}
+
+#art, #museum {
+    background: var(--footer-background);
+    text-align: center;
+    margin:5px;
+    width:30%;
+    flex:30%;
+}
+
+#img-id {
+    width:200px;
+    height:120px;
+}
+
+#art-list {
+    /* individual assignment*/
+    background: var(--background);
+    text-align: center; 
+    margin: 5px; 
+    border: 15px solid var(--text); 
+    width:30%; 
+    flex: 30%;
+  }
+
+/* Responsive Design */
+@media only screen and (min-width:600px) {
+    #flex-container {
+        display:flex;
+        flex-wrap:wrap;
+        flex:20%;
+        flex-grow:0%;
+    }
+
+}

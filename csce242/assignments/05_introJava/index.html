@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Intro to Java</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <a href="../../index.html">Home Page</a>
+    <h1>Assignment 7</h1>
+    <h2 id="top-header">Intro to JavaScript</h1>
+    <div class="container">
+        <div class="column" id="count-column">
+            <h2>Count:</h2>
+            <p id="count">0</p>
+            <button onclick="increaseCount()">Click Me!</button>
+        </div>
+        <div class="column" id="image-column">
+            <h2>Random Image:</h2>
+            <img id="random-image" src="https://picsum.photos/200" alt="Random Image" onclick="refreshImage()">
+        </div>
+        <div class="column" id="slider-column">
+            <h2>Slider Move:</h2>
+            <input type="range" id="slider" min="0" max="100" value="0" oninput="moveSquare()">
+            <div id="square"></div>
+        </div>
+    </div>
+</body>
+</html>
