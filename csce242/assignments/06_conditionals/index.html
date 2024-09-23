@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Conditionals</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <a href="../../index.html">Home Page</a>
+    <h1>Assignment 8</h1>
+    <h2 id="top-header">If Statements</h1>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="toggle-menu" onclick="toggleMenu()">&#9660;</div>
+                <ul class="menu">
+                    <li onclick="showExercise('colorSlider')">Exercise 1</li>
+                    <li onclick="showExercise('pictureChooser')">Exercise 2</li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div id="colorSlider" class="exercise" style="display: none;">
+                <h2>Color Slider</h2>
+                <div class="color-box" id="colorBox">
+                    <input type="range" min="0" max="255" value="0" id="colorRange" onchange="updateColor(this.value)">
+                    <div id="colorMessage"></div>
+                </div>
+            </div>
+
+            <div id="pictureChooser" class="exercise" style="display: none;">
+                <h2>Picture Chooser</h2>
+                <button onclick="showImage('small')">Small</button>
+                <button onclick="showImage('medium')">Medium</button>
+                <button onclick="showImage('large')">Large</button>
+                <img id="chosenImage" src="" alt="" style="display: none; margin-top: 10px;">
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
