@@ -3,6 +3,11 @@ package design_patterns.singleton;
 import java.util.ArrayList;
 import java.util.Random;
 
+/**
+ * Singleton class that manages the trivia game.
+ * It keeps track of scores, questions, and the number of games played.
+ */
+
 public class TriviaGame {
     private static TriviaGame triviaGame;
     private int score;
